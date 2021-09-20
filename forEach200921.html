@@ -1,0 +1,25 @@
+let journal= [ 
+{
+titre : "titre1",
+events:["a","b","c","d","e"],
+},
+{
+titre:"titre2",
+events:["aa","bb","cc","dd","ee"],
+},
+{
+titre:"titre3",
+events:["aaa","bbb","ccc","ddd","eee"],
+},
+]
+
+journal.forEach(function(elt){
+	document.write("<h1>"+ elt.titre +"</h1>");
+  	document.write("<ul>");
+    elt.events.forEach(function(faire){
+    document.write("<li>" + faire + "</li>");
+    }
+    );
+    document.write("</ul>");
+}
+);
